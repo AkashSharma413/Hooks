@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import React, { useReducer } from 'react'
 import "./style.css"
 
 const reducer = (state, action) => {
@@ -15,7 +15,6 @@ const reducer = (state, action) => {
 
 const UseReducer = () => {
     const initialData = 0;
-    // const [curValue, setcurValue] = useState(initialData);
     const [state, dispatch] = useReducer(reducer, initialData)
     return (
         <>
